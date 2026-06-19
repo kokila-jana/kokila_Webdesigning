@@ -1,0 +1,216 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button onclick="demo()">Click</button>
+    <script>
+        function demo()
+        {
+            document.querySelector("h1").innerHTML=""
+        }
+    </script>
+    
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <button onmouseenter="demo()" onmouseleave="abc()">Click</button>
+    <script>
+        function demo()
+        {
+            document.querySelector("h1").innerHTML="Hello Java"
+        }
+
+         function abc()
+        {
+            document.querySelector("h1").innerHTML=""
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="x" onkeydown="demo()">
+    <h1></h1>
+    <script>
+        function demo()
+        {
+            document.getElementById("x").style.backgroundColor="red"
+            document.querySelector("h1").innerHTML="Key pressed..."
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a" onkeyup="demo()">
+    <h1></h1>
+    <script>
+        function demo()
+        {
+            let a=document.getElementById("a");
+            a.value=a.value.toUpperCase();
+        }
+       
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Name: <input type="text" onfocus="demo(this.id)" id="x" > <br><br>
+   password: <input type="password" onfocus="demo(this.id)" id="y" >
+
+<script>
+    function demo(a)
+    {
+        document.getElementById("a").style.backgroundColor="red"
+    }
+</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="a" onchange="demo()"> <br><br>
+    <input type="text" id="b">
+    <script>
+        function demo()
+        {
+            document.getElementById("a").style.backgroundColor="red"
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="demo()">
+        <input type="text" required> <br><br>
+         <input type="text" required><br><br>
+         <button>Submit</button>
+    </form>
+    <script>
+        function demo()
+        {
+            alert("form submited successfully")
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="demo()">
+    <h1>Hello</h1>
+</body>
+<script>
+    function demo()
+    {
+     alert("Page loading...")   
+    }
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button>
+    <script>
+        document.querySelector("button").addEventListener("click",demo)
+        document.querySelector("button").addEventListener("click",fun)
+        function demo()
+        {
+            alert("hello")
+        }
+        function fun()
+        {
+            document.write("hello")
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click</button>
+    <h1></h1>
+    <script>
+        let a=10,b=45
+        document.querySelector("button").addEventListener("click",fun)
+        function fun()
+        {
+            demo(x,y);
+        }
+        function demo(x,y)
+        {
+            document.querySelector("h1").innerHTML=x+y;
+
+        }
+    </script>
+</body>
+</html>
+
