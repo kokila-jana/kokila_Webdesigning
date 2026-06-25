@@ -1,0 +1,246 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1 id="x">Hello</h1>
+    <button class="a">click</button>
+    <button class="b">show</button>
+    <script>
+       
+        $(".a").click(function()
+    {
+        $("#x").hide()
+    })
+
+     $(document).ready(function()
+    {
+        $(".b").click(function()
+    {
+        $("#x").show()
+    })
+    })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque iusto ut fuga libero, <mark>a quia quisquam non vero ipsum excepturi fugit</mark> tempore accusantium nihil, autem veritatis mollitia recusandae, sed quae.</p>
+    <button class="a">Text</button>
+    <button class="b">HTML</button>
+    <script>
+        $(".a").click(function()
+    {
+        alert($("p").text())
+    })
+        $(".b").click(function()
+    {
+        alert($("p").html())
+    })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="text" class="a">
+    <button>click</button>
+    <h1></h1>
+    <script>
+       $("button").click(function()
+    {
+        document.querySelector("h1").innerHTML=$(".a").val()
+    })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="10013.jpg" alt="image not found" width="200px" height="200px" style="border-radius: 50%;" > <br><br>
+    <script>
+        document.write($("img").attr("src")+"<br>")
+        document.write($("img").attr("alt")+"<br>")
+        document.write($("img").attr("width")+"<br>")
+        document.write($("img").attr("height")+"<br>")
+        document.write($("img").attr("style")+"<br>")
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .a
+        {
+            color: purple;
+            background-color: yellow;
+            width: 120px;
+            font-style: italic;
+            font-size: 50px;
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello</h1>
+    <button class="x">addClass</button>
+    <button class="y">RemoveClass</button>
+    <button class="z">ToggleClass</button>
+    <script>
+        $(".x").click(function()
+    {
+        $("h1").addClass("a")
+    })
+        $(".y").click(function()
+    {
+        $("h1").removeClass("a")
+    })
+        $(".z").click(function()
+    {
+        $("h1").toggleClass("a")
+    })
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+   <h1>Hello</h1>
+   <button class="a">Show</button>
+   <button class="b">Hide</button>
+   <button class="c">Toggle</button>
+   <script>
+    $(".a").click(function()
+{
+    $("h1").show(2000)
+})
+    $(".b").click(function()
+{
+    $("h1").hide(1000)
+})
+    $(".c").click(function()
+{
+    $("h1").toggle(3000)
+})
+   </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi sit dolore voluptate odit deleniti tenetur ut? Deleniti id et accusamus alias vero enim odio maiores odit explicabo, at est?</p>
+
+    <button class="a">fadein</button>
+    <button class="b">fadeout</button>
+    <button class="c">fadetoggle</button>
+</body>
+<script>
+    $(".a").click(function()
+{
+    $("p").fadeIn(2000)
+})
+    $(".b").click(function()
+{
+    $("p").fadeOut(2000)
+})
+    $(".c").click(function()
+{
+    $("p").fadeToggle(2000)
+})
+</script>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi sit dolore voluptate odit deleniti tenetur ut? Deleniti id et accusamus alias vero enim odio maiores odit explicabo, at est?</p>
+
+    <button class="a">slide up</button>
+    <button class="b">slide down</button>
+    <button class="c">slide toggle</button>
+</body>
+<script>
+    $(".a").click(function()
+{
+    $("p").slideUp(2000)
+})
+    $(".b").click(function()
+{
+    $("p").slideDown(2000)
+})
+    $(".c").click(function()
+{
+    $("p").slideToggle(2000)
+})
+</script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eligendi sit dolore voluptate odit deleniti tenetur ut? Deleniti id et accusamus alias vero enim odio maiores odit explicabo, at est?</p>
+
+    <button class="a">fadeto</button>
+</body>
+<script>
+  $(".a").click(function()
+{
+    $("p").fadeTo(2000,0.3)
+})
+</script>
+</html>
